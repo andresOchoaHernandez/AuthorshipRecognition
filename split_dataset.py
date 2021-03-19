@@ -49,7 +49,20 @@ if __name__ == "__main__":
 		test_set[author] = [books_for_each_author[author][index] for index in range(books_per_author_training_set[author]+1,len(books_for_each_author[author]))]
 
 	#writing out the folders
-
-
+	os.mkdir(home_dir +"/training_set/")
+	for elem in training_set.keys():
+		os.mkdir(home_dir +"/training_set/"+elem)
+	
+	for key in training_set.keys():
+		for path in training_set[key]:
+			shutil.copyfile(path,home_dir + "/training_set/"+key+"/"+path.replace(home_dir+"/Dataset/",""))
+	
+	os.mkdir(home_dir +"/test_set/")
+	for elem in test_set.keys():
+		os.mkdir(home_dir +"/test_set/"+elem)
+		
+	for key in test_set.keys():
+	for path in test_set[key]:
+		shutil.copyfile(path,home_dir + "/test_set/"+key+"/"+path.replace(home_dir+"/Dataset/",""))
 	# Creating a function that selects randomly the number of books calculate before of each author
 	# TODO
