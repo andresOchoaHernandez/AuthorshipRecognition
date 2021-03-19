@@ -55,14 +55,14 @@ if __name__ == "__main__":
 	
 	for key in training_set.keys():
 		for path in training_set[key]:
-			shutil.copyfile(path,home_dir + "/training_set/"+key+"/"+path.replace(home_dir+"/Dataset/",""))
+			shutil.copyfile(path,home_dir + "/training_set/"+key+"/"+path.replace(home_dir+"/Dataset/"+key+"/",""))
 	
 	os.mkdir(home_dir +"/test_set/")
 	for elem in test_set.keys():
 		os.mkdir(home_dir +"/test_set/"+elem)
 		
 	for key in test_set.keys():
-	for path in test_set[key]:
-		shutil.copyfile(path,home_dir + "/test_set/"+key+"/"+path.replace(home_dir+"/Dataset/",""))
+		for path in test_set[key]:
+			shutil.copyfile(path,home_dir + "/test_set/"+key+"/"+path.replace(home_dir+"/Dataset/"+key+"/",""))
 	# Creating a function that selects randomly the number of books calculate before of each author
 	# TODO
