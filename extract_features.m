@@ -57,14 +57,3 @@ tot_words = size(tdetails,1);
 feature_vector = [counts_alphabet counts_punctuation pos_counts lexical_variety average_sentence_length average_word_length tot_words]';
 toc
 end
-
-
-
-
-
-
-
-
-
-
-
