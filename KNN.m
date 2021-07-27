@@ -20,4 +20,3 @@ labels_k_nearest = train_set_labels(indexes_k_nearest);
 
 class = mode(labels_k_nearest);
 end
-
