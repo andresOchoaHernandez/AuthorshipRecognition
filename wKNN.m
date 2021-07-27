@@ -27,4 +27,3 @@ end
 [~,x] = max(wf);
 class = unique_classes(x);
 end
-
