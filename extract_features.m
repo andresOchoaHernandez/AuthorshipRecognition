@@ -10,7 +10,7 @@ counts_punctuation = zeros(1,size(punctuation,2));
 
 chars = lower(book);
 
-%removing some shit
+%removing some unusefull stuff
 chars = strtrim(chars);
 chars = erase(chars,newline);
 chars = erase(chars,char(13));
