@@ -34,6 +34,4 @@ then you need to open the python terminal and type
 >> import nltk
 >> nltk.download()
 ```
-- glob  
-
 Once the browser page opened, navigate to the folder of the repo and start the AuthorshipRecognitionPipeline notebook.
