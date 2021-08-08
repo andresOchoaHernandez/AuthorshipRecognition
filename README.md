@@ -12,4 +12,28 @@ Then launch spark:
 ```bash
 SPARK_LOCAL_IP=127.0.0.1 ./bin/pyspark
 ```
+Then you need to install some python pacakges:
+- numpy
+```bash
+pip install numpy
+```
+- scipy
+```bash
+pip install scipy
+```
+- matplotlib
+```bash
+pip install matplotlib
+```
+- nltk
+```bash
+pip install nltk
+```
+then you need to open the python terminal and type
+```python
+>> import nltk
+>> nltk.download()
+```
+- glob  
+
 Once the browser page opened, navigate to the folder of the repo and start the AuthorshipRecognitionPipeline notebook.
